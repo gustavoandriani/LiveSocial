@@ -36,47 +36,7 @@
         
     </ul>
     <!-- Optional JavaScript -->
-    <!-- <script src="js/index.js"></script> -->
-    <script>
-        const liveSocial = {
-            usuarios: [
-                {
-                    username: "guandriani"
-                }
-            ],
-            posts: [
-                {
-                    id: 1,
-                    owner: "guandriani",
-                    content: "Minha primeira postagem"
-                }
-            ],
-            createPost(dados) {
-                // Cria posts na memória (Array/Objeto)
-                liveSocial.posts.push({
-                    id: liveSocial.posts.length + 1,
-                    owner: dados.owner,
-                    content: dados.content,
-                });
-                // Cria Post no HTML
-                const $postList = document.querySelector('.postList');
-                $postList.insertAdjacentHTML('afterbegin', `<li class="post"><h3>@${dados.owner}</h3>${dados.content}</li>`);
-            }
-        };
-
-        const $myForm = document.querySelector('form');
-
-        $myForm.addEventListener('submit', function createPostController(infosEvento) {
-            infosEvento.preventDefault();
-            console.log("Estamos criando um novo post!");
-
-            const $entryCreatePost = document.querySelector('input[name="createPost"]');
-
-            liveSocial.createPost({owner: "guandriani", content: $entryCreatePost.value});
-
-            $entryCreatePost.value = '';
-        })
-    </script>
+    <script src="js/index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
