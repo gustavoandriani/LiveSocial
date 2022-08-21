@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(41, 41, 41)!important;
+    color: rgb(167, 167, 167)!important;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input#createPostArea {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px 0 0 30px;
+    border: 0.5px solid rgb(176, 176, 176);
+}
+    input#createPostArea:focus, textarea:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        border: 1.5px solid rgb(176, 176, 176);
+        outline: 0;
+    }
+button#createPostButton {
+    margin-left: -2px;
+    height: 30px;
+    border: 0;
+    background-color: rgb(255, 76, 76);
+    border-radius: 0 30px 30px 0;
+}
+
+.profileContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid rgb(28, 28, 28);
+    border-top: none;
+    border-radius: 30px;
+    width: 33%!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 3;
+}
+    .profileContent .userProfilePicture img {
+        border: 4px solid rgb(218, 23, 23);
+        border-radius: 50%;
+        display: block;
+        z-index: 3;
+    }
+
+.userProfileCover {
+    background: url('https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg') no-repeat;
+    width: 109%;
+    height: 150px;
+    border-radius: 30px 30px 0 0;
+}
+
+.userProfilePicture {
+    margin-top: -50px;
+}
+
+.infoProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.postList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    display: block;
+    border-bottom: 1.5px solid rgb(204, 203, 203);
+    width: 450px;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+}
+    .post h3 {
+        font-size: 1em;
+    }
