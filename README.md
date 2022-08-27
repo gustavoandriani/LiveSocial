@@ -19,3 +19,15 @@ Nesta primeira versão disponibilizada, já temos a funcionalidade de criar post
 - *Sistema de postagem funcionando 100%*;
 - *As postagens vêm acompanhadas com o username de quem a publicou **(O username atualmente é fixo como @guandriani, teremos sistema de cadastro de usuários em breve)**;*
 - *Projeto em Dark Theme, futuras versões traram a opção de escolha de temas.*
+
+---
+
+## V2.0 - 27/08/2022
+Novas funcionalidades foram adicionadas no projeto.
+
+- *Melhoria de responsividade. Agora o projeto está mais compatível em outros dispositivos.*;
+- *Implementação do FontAwesome.*;
+- *Implementação da função **DELETE**. Clicar sob o ícone de lixeira no post que desejar deletar.*;
+- *Implementação da função **EDITAR**. Acompanhei a ideia do @omariosouto, para editar o conteúdo apenas clique sobre o texto.*;
+- *IDs de posts agora são definidos pela data de publicação.*
+- *Melhorias de design da página, agora temos um modelo mais minimalista.*
