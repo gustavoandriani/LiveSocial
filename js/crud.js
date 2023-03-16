@@ -87,3 +87,15 @@ document.querySelector('.postList').addEventListener('input', function (infosEve
 
     liveSocial.updatePostContent(id, currentElement.innerText)
 })
+
+// DEBUG - POST EDIT
+window.addEventListener("keydown", enterblock);
+
+function enterblock (KeyboardEvent) {
+    var keyEnter = KeyboardEvent.key;
+    if(keyEnter === 'Enter') {
+        KeyboardEvent.preventDefault()
+        window.getSelection().removeAllRanges();
+        $myForm.focus();
+    }
+}

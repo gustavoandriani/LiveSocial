@@ -41,3 +41,8 @@ Uma nova aparência surge.
 - *Alterações de menu.*
 - *Dark Mode e Light Mode, você escolhe, o importante é se sentir bem.*
 - *Simulação de um perfil de usuário com, foto de perfil e capa.*
+
+## V3.1 - 16/03/2023
+Correção de bug.
+
+- *Antes o **CONTENT EDITABLE** utilizado para editar o conteúdo das postagens não era desabilitado ao confirmar com a tecla **ENTER**, agora temos essa funcionalidade disponível.*
