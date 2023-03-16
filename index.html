@@ -3,9 +3,11 @@
   <head>
     <title>PROJETO CRUD</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8">;
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/light-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -16,32 +18,75 @@
     <script src="https://kit.fontawesome.com/7db7094ad7.js" crossorigin="anonymous"></script>
     
   </head>
-  <body>
-    <main>
-        <div class="profileContent container">
-            <div class="userProfileCover"></div>
-            <div class="userProfilePicture">
-                <img src="https://img.ibxk.com.br/2019/02/17/17124052466014.jpg?ims=704x" width="80px">
-            </div>
-            <div class="infoProfile">
-                <h2 style="display: block;">Gustavo Andriani</h2>
-                <span style="display: block; margin-top: -12px;">@guandriani</span>
-            </div>
-            <div class="userProfileBio">
-                <span>Eu amo programar s2</span>
-            </div>
-        </div>
-    </main>
-    <form class="container">
-      <input id="createPostArea" name="createPost" placeholder="Digite seu post">
-      <button id="createPostButton" type="submit">Postar</button>
-    </form>
+  <body class="light-theme">
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">LiveSocial</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html"><i class="fa-xl fa-solid fa-house"></i></a>
+            </li>
 
-    <ul class="postList container">
-        
-    </ul>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-xl fa-solid fa-gear"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button id="switchTheme" class="dropdown-item" onclick="switchTheme()">Alterar Tema</button>
+              </div>
+            </div>
+
+            <div class="d-none d-md-block ml-3 mr-3 separador"></div>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cadastro.html">Cadastro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="perfil">
+        <div class="perfil-capa"></div>
+        <div class="perfil-feature">
+          <div class="perfil-foto">
+            <img src="src/img/GUSTAVO-(2).png" alt="">
+          </div>
+          <div class="perfil-sobre">
+            <h3>Gustavo Andriani</h3>
+            <h5>@guandriani</h5>
+          </div>
+          <div class="perfil-functions">
+            <button><i class="fa-lg fa-solid fa-user-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="post-creater">
+        <form class="container">
+          <input id="createPostArea" name="createPost" placeholder="Digite seu post">
+          <button id="createPostButton" type="submit">Postar</button>
+        </form>
+      </div>
+  
+      <ul class="postList">
+          
+      </ul>
+    </main>
     <!-- Optional JavaScript -->
-    <script src="js/index.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/switchTheme.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

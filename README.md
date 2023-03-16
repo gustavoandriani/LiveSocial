@@ -31,3 +31,13 @@ Novas funcionalidades foram adicionadas no projeto.
 - *Implementação da função **EDITAR**. Acompanhei a ideia do @omariosouto, para editar o conteúdo apenas clique sobre o texto.*;
 - *IDs de posts agora são definidos pela data de publicação.*
 - *Melhorias de design da página, agora temos um modelo mais minimalista.*
+
+---
+
+## V3.0 - 02/10/2022
+Uma nova aparência surge.
+
+- *Agora temos uma página mais bonita e intuitiva para os usuários.*
+- *Alterações de menu.*
+- *Dark Mode e Light Mode, você escolhe, o importante é se sentir bem.*
+- *Simulação de um perfil de usuário com, foto de perfil e capa.*

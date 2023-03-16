@@ -1,0 +1,11 @@
+.light-theme {
+    --primary-color-contrast: #ff0026;
+    --secondary-color-contrast: #ffffff;
+    --page-background: #ffffff;
+    --text-color: #000000;
+    --nav-background: #ffffff;
+    --nav-color: #000000;
+    --perfil-feature-color: #ff0026;
+    --perfil-border-color: #282828;
+    --brand-constrast: #000000;
+}

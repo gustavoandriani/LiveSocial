@@ -1,0 +1,11 @@
+.dark-theme {
+    --primary-color-contrast: #ffffff;
+    --secondary-color-contrast: #ff0026;
+    --page-background: #3E3E3E;
+    --text-color: rgba(184, 184, 184, 0.933);
+    --nav-background: #222222;
+    --nav-color: #ff0026;
+    --perfil-feature-color: #282828;
+    --perfil-border-color: #ff0026;
+    --brand-constrast: #ffffff;
+}
